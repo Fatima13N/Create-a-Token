@@ -28,7 +28,7 @@ contract MyToken {
     // mint function
     function mint(address _address, uint256 _value) external{
        totalSupply += _value;
-       balances[_address] = _value;
+       balances[_address] += _value;
     }
 
     // burn function
